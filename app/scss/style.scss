@@ -30,6 +30,7 @@ hr {
     &__divider {
         border-bottom: 1px solid #888989;
         margin: 2px 0;
+        clear:right;
         &--lg {
             height: 10px;
         }
@@ -41,6 +42,7 @@ hr {
     &__text {
         text-align: inherit;
         margin: 5px 0;
+        font-weight: 400;
         &--bold {
             font-weight: 800;
         }
@@ -49,6 +51,9 @@ hr {
         }
         &--sm{
             font-size: 0.85rem;
+        }
+        &--indent{
+            margin-left: 1em;
         }
     }
     &__info{
