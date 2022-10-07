@@ -5,13 +5,16 @@
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
+    padding: 20px;
 }
-h1,
+.cafe-title{
+    text-align: center;
+}
 h2,
 p {
     text-align: center;
 }
-h1,h2{
+h2{
     font-family: Impact, serif;
     font-size: 40px;
 }
@@ -23,15 +26,22 @@ hr{
 .established{
     font-style: italic;
 }
+.flex{
+    &__gallery img{
+        width: 100%;
+        max-width: 350px;
+        height: 300px;
+    }
+}
 .wrapper {
-    width: 80%;
     background-color: burlywood;
     margin: 0 auto;
     padding: 20px;
-    max-width: 500px;
 }
 .item p{
     display: inline-block;
+    font-size: 18px;
+    margin: 0 5px;
 }
 .flavor, .dessert{
     text-align: left;
