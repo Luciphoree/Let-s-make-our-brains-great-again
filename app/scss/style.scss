@@ -1,17 +1,24 @@
-@import 'global';
-@import 'vars';
-@import 'fonts';
+@import "global";
+@import "vars";
+@import "fonts";
 
-body{
-    background-color: brown;
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
 }
-h1,h2,p{
+h1,
+h2,
+p {
     text-align: center;
 }
+.wrapper {
+    width: 80%;
+    background-color: burlywood;
+    margin: 0 auto;
+}
 *,
-*::before,*::after{
+*::before,
+*::after {
     box-sizing: border-box;
 }
 
-
-@import 'media';
+@import "media";
