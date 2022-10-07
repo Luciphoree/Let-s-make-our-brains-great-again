@@ -6,6 +6,8 @@
 //     return result
 
 
+
+
 // }
 // let footballGame = ['1:1']
 
@@ -93,13 +95,13 @@
 
 // console.log(even_or_odd(2))
 
-let str = "kek"
-let newStr = str.slice(1,-1)
+// let str = "kek"
+// let newStr = str.slice(1,-1)
 
 
 
-console.log(newStr)
-console.log(newStr[0])
+// console.log(newStr)
+// console.log(newStr[0])
 
 // function removeChar(str) {
 //     // if (!str) {
@@ -113,3 +115,31 @@ console.log(newStr[0])
 //   };
 
 //   console.log(removeChar(str))
+// let arrr = [1, 2, -3, 4, 5];
+
+// function positiveSum(arr) {
+//     let positiveNumbers = arr.map(item => {
+//         if(Math.sign(item) == -1){
+//             return 0
+//         } else return item
+//     })
+//     let result = positiveNumbers.reduce((sum,current) => sum + current, 0)
+//     return result
+// }
+
+// console.log(positiveSum(arrr))
+
+function toNum(value) {
+    let oldStr = ""
+    for (i = 0; i < value.length; i++) {
+        if (+value[i] >= 0) {
+            oldStr += value[i] + ""
+
+        } else if (+i == isNaN){
+            i++
+        }
+    }
+    return oldStr
+}
+
+console.log(toNum('a123b'))
