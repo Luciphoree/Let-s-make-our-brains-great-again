@@ -2,6 +2,12 @@
 @import 'vars';
 @import 'fonts';
 
+body{
+    background-color: brown;
+}
+h1,h2,p{
+    text-align: center;
+}
 *,
 *::before,*::after{
     box-sizing: border-box;
