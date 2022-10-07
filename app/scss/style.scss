@@ -24,14 +24,62 @@ hr {
     background-color: brown;
     border-color: brown;
 }
-.label {
-    border: 2px solid black;
-    width: 270px;
-    margin: 0 auto;
-    padding: 0 7px;
-}
-.nutrition{
+
+.nutrition {
     background-color: #fff;
+    &__divider {
+        border-bottom: 1px solid #888989;
+        margin: 2px 0;
+        &--lg {
+            height: 10px;
+        }
+        &--lg,
+        &--mg {
+            background-color: #000;
+        }
+    }
+    &__text {
+        text-align: inherit;
+        margin: 5px 0;
+        &--bold {
+            font-weight: 800;
+        }
+        &--right {
+            float: right;
+        }
+        &--sm{
+            font-size: 0.85rem;
+        }
+    }
+    &__info{
+        h1{
+            margin: -5px -2px;
+            font-size: 2em;
+            overflow: hidden;
+            span{
+                font-size: 1.2em;
+            }
+        }
+    }
+    &__item{
+        border: 2px solid black;
+        width: 270px;
+        margin: 5px auto;
+        padding: 10px 7px;
+    }
+    &__label {
+
+        h1 {
+            text-align: center;
+            margin: -4px 0;
+            font-size: 30px;
+            letter-spacing: 0.15px;
+        }
+        p {
+            text-align: inherit;
+            margin: 0;
+        }
+    }
 }
 .established {
     font-style: italic;
