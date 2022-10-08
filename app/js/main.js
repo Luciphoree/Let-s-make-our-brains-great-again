@@ -129,17 +129,69 @@
 
 // console.log(positiveSum(arrr))
 
-function toNum(value) {
-    let oldStr = ""
-    for (i = 0; i < value.length; i++) {
-        if (+value[i] >= 0) {
-            oldStr += value[i] + ""
+// function toNum(value) {
+//     let oldStr = ""
+//     for (i = 0; i < value.length; i++) {
+//         if (+value[i] >= 0) {
+//             oldStr += value[i] + ""
 
-        } else if (+i == isNaN){
-            i++
-        }
-    }
-    return oldStr
-}
+//         } else if (+i == isNaN){
+//             i++
+//         }
+//     }
+//     return oldStr
+// }
 
-console.log(toNum('a123b'))
+// console.log(toNum('a123b'))
+
+
+
+let word = "friends"
+console.log(word.charAt(1))
+
+
+// function wordsToMarks(string) {
+//     let result = 0;
+//     let number;
+//     for (index = 0; index < string.length; index++) {
+//         number = string.charCodeAt(index)
+//         result += number
+//     } 
+//     return result
+// }
+
+// console.log(wordsToMarks("friends"))
+
+// function sameCase(a, b){
+//     if(a.toUpperCase && b.toLowerCase){
+//       return 0
+//     }
+//     if((a.toUpperCase && b.toUppercase) || (a.toLowerCase && b.toLowerCase)){
+//       return 1;
+//     }
+//     if(a.toString || b.toString){
+//       return -1
+//     }
+//   }
+
+//   if(a.toUpperCase && b.toLowerCase){
+//     return 0
+//   }
+//   if((a.toUpperCase && b.toUppercase) || (a.toLowerCase && b.toLowerCase)){
+//     return 1;
+//   } else if(a.toString || b.toString){
+//     return -1
+//   } return 0
+
+
+// function maskify(cc) {
+//     let newStr = ""
+//     for (i = 0; i < cc.length + 4; i++) {
+//         newStr += "#" + cc[i]
+        
+//     }return newStr
+// }
+// console.log(maskify('4555532'))
+
+// let str = "fdfdf tre qw23 2"
+// console.log(str.split(" ").join(""))
