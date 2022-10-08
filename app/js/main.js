@@ -260,9 +260,31 @@
 // console.log(basicOp('+', 4, 7))
 
 
-function getSum( a,b )
-{
-  return a + b
+// function getSum( a,b )
+// {
+//   return a + b
+// }
+
+// console.log(getSum(337,499))
+
+
+function calculateYears(principal, interest, tax, desired) {
+    let summa = principal
+    let interestOneYear = principal * interest
+    let taxOneYear = interestOneYear * tax
+    let raznicaInterestTax = interestOneYear - taxOneYear
+    let moneyOneYear = principal + raznicaInterestTax
+    let summaItog = desired
+    let result = 0;
+    let years = 0;
+    for (i = 0; result >= summaItog; i++) {
+        result = summa + raznicaInterestTax
+        years = i
+
+    }
+
+
+
 }
 
-console.log(getSum(337,499))
+console.log(calculateYears(1000, 0.05, 0.18, 1100))
