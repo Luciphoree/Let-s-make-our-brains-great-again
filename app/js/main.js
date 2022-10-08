@@ -241,22 +241,28 @@
 //     false, false, true, true]))
 
 
-function basicOp(operation, value1, value2) {
-    if(operation == "+"){
-        return value1 + value2
-    }
-    if(operation == "-"){
-        return value1 - value2
-    }
-    if(operation == "*"){
-        return value1 * value2
-    }
-    if(operation == "/"){
-        return value1 / value2
-    }
+// function basicOp(operation, value1, value2) {
+//     if(operation == "+"){
+//         return value1 + value2
+//     }
+//     if(operation == "-"){
+//         return value1 - value2
+//     }
+//     if(operation == "*"){
+//         return value1 * value2
+//     }
+//     if(operation == "/"){
+//         return value1 / value2
+//     }
 
+// }
+
+// console.log(basicOp('+', 4, 7))
+
+
+function getSum( a,b )
+{
+  return a + b
 }
 
-console.log(basicOp('+', 4, 7))
-
-
+console.log(getSum(337,499))
