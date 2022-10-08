@@ -146,8 +146,7 @@
 
 
 
-let word = "friends"
-console.log(word.charAt(1))
+
 
 
 // function wordsToMarks(string) {
@@ -196,14 +195,68 @@ console.log(word.charAt(1))
 // let str = "fdfdf tre qw23 2"
 // console.log(str.split(" ").join(""))
 
-function typeOfSum(a, b) {
-    let sum = a + b
-    if (typeof (sum) == "number") {
-        return "number"
+// function typeOfSum(a, b) {
+//     let sum = a + b
+//     if (typeof (sum) == "number") {
+//         return "number"
+//     }
+//     if(typeof(sum) == "string"){
+//         return "string"
+//     }
+// }
+
+// console.log(typeOfSum(3,'e'))
+
+
+// function massiveCheck(arr) {
+//     let newArray = []
+//     newArray = arr.map((item,index) => `${index + 1}:` + item)
+//     return newArray
+
+// }
+
+// console.log(massiveCheck(['a', 'b', 'c']))
+
+
+// function countSheeps(arrayOfSheep) {
+//     let sum = 0;
+//     arrayOfSheep.forEach(item => {
+
+//         if (item == true) {
+//             sum += 1
+
+//         } else if (item == false) {
+//             sum += 0
+//         }
+//         return sum
+//     })
+
+// }
+
+// console.log(countSheeps([true, true, true, false,
+//     true, true, true, true,
+//     true, false, true, false,
+//     true, false, false, true,
+//     true, true, true, true,
+//     false, false, true, true]))
+
+
+function basicOp(operation, value1, value2) {
+    if(operation == "+"){
+        return value1 + value2
     }
-    if(typeof(sum) == "string"){
-        return "string"
+    if(operation == "-"){
+        return value1 - value2
     }
+    if(operation == "*"){
+        return value1 * value2
+    }
+    if(operation == "/"){
+        return value1 / value2
+    }
+
 }
 
-console.log(typeOfSum(3,'e'))
+console.log(basicOp('+', 4, 7))
+
+
