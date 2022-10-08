@@ -188,10 +188,22 @@ console.log(word.charAt(1))
 //     let newStr = ""
 //     for (i = 0; i < cc.length + 4; i++) {
 //         newStr += "#" + cc[i]
-        
+
 //     }return newStr
 // }
 // console.log(maskify('4555532'))
 
 // let str = "fdfdf tre qw23 2"
 // console.log(str.split(" ").join(""))
+
+function typeOfSum(a, b) {
+    let sum = a + b
+    if (typeof (sum) == "number") {
+        return "number"
+    }
+    if(typeof(sum) == "string"){
+        return "string"
+    }
+}
+
+console.log(typeOfSum(3,'e'))
