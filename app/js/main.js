@@ -268,23 +268,104 @@
 // console.log(getSum(337,499))
 
 
-function calculateYears(principal, interest, tax, desired) {
-    let summa = principal
-    let interestOneYear = principal * interest
-    let taxOneYear = interestOneYear * tax
-    let raznicaInterestTax = interestOneYear - taxOneYear
-    let moneyOneYear = principal + raznicaInterestTax
-    let summaItog = desired
-    let result = 0;
-    let years = 0;
-    for (i = 0; result >= summaItog; i++) {
-        result = summa + raznicaInterestTax
-        years = i
+// function calculateYears(principal, interest, tax, desired) {
+//     let summa = principal
+//     let interestOneYear = principal * interest
+//     let taxOneYear = interestOneYear * tax
+//     let raznicaInterestTax = interestOneYear - taxOneYear
+//     let moneyOneYear = principal + raznicaInterestTax
+//     let summaItog = desired
+//     let result = 0;
+//     let years = 0;
+//     for (i = 0; result >= summaItog; i++) {
+//         result = summa + raznicaInterestTax
+//         years = i
 
+//     }
+
+
+
+// }
+
+// console.log(calculateYears(1000, 0.05, 0.18, 1100))
+
+
+// function greet(language) {
+// 	const dataBase = {
+//       english: 'Welcome',
+//       czech: 'Vitejte',
+//       danish: 'Velkomst',
+//       dutch: 'Welkom',
+//       estonian: 'Tere tulemast',
+//       finnish: 'Tervetuloa',
+//       flemish: 'Welgekomen',
+//       french: 'Bienvenue',
+//       german: 'Willkommen',
+//       irish: 'Failte',
+//       italian: 'Benvenuto',
+//       latvian: 'Gaidits',
+//       lithuanian: 'Laukiamas',
+//       polish: 'Witamy',
+//       spanish: 'Bienvenido',
+//       swedish: 'Valkommen',
+//       welsh: 'Croeso'
+//   }
+//   return 
+
+// }
+
+// console.log(greet("english"))
+
+// function removeDuplicateWords(s) {
+//    let array = []
+//    array = s.split(' ')
+//    let newArray = []
+//    newArray = Array.from(new Set(array))
+//    let str = newArray.join(' ')
+//    return str;
+// }
+
+
+// console.log(removeDuplicateWords('alpha beta beta gamma gamma gamma delta alpha beta beta gamma gamma gamma delta'))
+
+
+// const rps = (p1, p2) => {
+//     if(p1 == p2){
+//       return`Draw!`
+//     }
+//     let game ={
+//       rock:{
+//         sciccors: 1,
+//         paper: 0
+//       },
+//       sciccors:{
+//         rock: 0,
+//         paper: 1
+//       },
+//       paper:{
+//         sciccors: 0,
+//         rock: 1
+//       }
+//     }
+
+
+//     if(game[p1]){
+//       return `Player 1 won!`
+//     } 
+
+
+//   };
+
+
+//   console.log(rps('rock', 'scissors'))
+
+
+function solution(str) {
+    let result = ""
+    for (let i of str) {
+        result = i + result
     }
-
-
-
+    return result
 }
 
-console.log(calculateYears(1000, 0.05, 0.18, 1100))
+console.log(solution('world'))
