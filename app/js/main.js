@@ -360,12 +360,12 @@
 //   console.log(rps('rock', 'scissors'))
 
 
-function solution(str) {
-    let result = ""
-    for (let i of str) {
-        result = i + result
-    }
-    return result
-}
+// function solution(str) {
+//     let result = ""
+//     for (let i of str) {
+//         result = i + result
+//     }
+//     return result
+// }
 
-console.log(solution('world'))
+// console.log(solution('world'))
